@@ -10,77 +10,86 @@
 </head>
 
 <body>
-  <!-- Code Partially Generated Using Copiolot -->
+  <!-- Code Generated Using Copilot with edits and comments added by me -->
   <h1>Starting Lineup</h1>
-
   <form id="lineupForm">
 
+    <!-- Use a <p> to surround related labels, form widgets, and fieldsets -->
     <p>
+        <!-- Use a <fieldset> and <legend> with radio buttons for choosing Draft or Final. -->
         <fieldset>
-          <legend>Status</legend>
 
-          <label>
-              <input type="radio" name="status" value="Draft">
-              Draft
-          </label>
+            <legend>Status</legend>
+            <!-- The radio buttons' name attribute should be "status" with values "Draft" and "Final". -->
+             <!-- Add a <label> to each radio button so clicking the label text selects the radio button -->
+            <label> 
+                <input type="radio" name="status" value="Draft">
+                Draft
+            </label>
 
-          <label>
-              <input type="radio" name="status" value="Final" checked>
-              Final
-          </label>
+            <label>
+                <!-- Make the Final radio button checked by default -->
+                <input type="radio" name="status" value="Final" checked>
+                Final
+            </label>
+
         </fieldset>
     </p>
 
     <p>
         <label for="gameDate">Date:</label>
-        <select id="gameDate" name="gameDate">
-          <option value="March 20">March 20</option>
-          <option value="March 24">March 24</option>
-          <option value="April 2">April 2</option>
-          <option value="April 6">April 6</option>
-          <option value="April 13">April 13</option>
+        <!-- The <select> name attribute should be "gameDate", -->
+        <select id="gameDate" name="gameDate"> 
+            <!-- Use a drop-down with the following dates: March 20, March 24, April 2, April 6, April 13 -->
+            <!-- each <option> should use a value identical to the option's date. -->
+            <option value="March 20">March 20</option>
+            <option value="March 24">March 24</option>
+            <option value="April 2">April 2</option>
+            <option value="April 6">April 6</option>
+            <option value="April 13">April 13</option>
         </select>
     </p>
 
     <p>
         <fieldset>
-          <legend>Players</legend>
+            <legend>Players</legend>
 
-          <label>
-              <input type="checkbox" name="players" value="Aarav Agarwal">
-              Aarav Agarwal
-          </label><br>
+            <label>
+                <input type="checkbox" name="players" value="Aarav Agarwal">
+                Aarav Agarwal
+            </label><br>
 
-          <label>
-              <input type="checkbox" name="players" value="Ava Johnson">
-              Ava Johnson
-          </label><br>
+            <label>
+                <input type="checkbox" name="players" value="Ava Johnson">
+                Ava Johnson
+            </label><br>
 
-          <label>
-              <input type="checkbox" name="players" value="Julio Ortiz">
-              Julio Ortiz
-          </label><br>
+            <label>
+                <input type="checkbox" name="players" value="Julio Ortiz">
+                Julio Ortiz
+            </label><br>
 
-          <label>
-              <input type="checkbox" name="players" value="Liam Rubio">
-              Liam Rubio
-          </label><br>
+            <label>
+                <input type="checkbox" name="players" value="Liam Rubio">
+                Liam Rubio
+            </label><br>
 
-          <label>
-              <input type="checkbox" name="players" value="Emma Witherspoon">
-              Emma Witherspoon
-          </label>
+            <label>
+                <input type="checkbox" name="players" value="Emma Witherspoon">
+                Emma Witherspoon
+            </label>
         </fieldset>
     </p>
 
     <p>
+        <!-- Use a submit <input> with value "Submit" -->
         <input type="submit" value="Submit">
     </p>
 
   </form>
 
 <p id="output"></p>
-<!-- End of Copiolot Use -->
+<!-- End of Copilot Use -->
   <script src="script.js"></script>
 </body>
 
